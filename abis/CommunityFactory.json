@@ -1,0 +1,177 @@
+[
+  {
+    "inputs": [], 
+    "constant": false, 
+    "name": "renounceOwnership", 
+    "outputs": [], 
+    "stateMutability": "nonpayable", 
+    "payable": false, 
+    "signature": "0x715018a6", 
+    "type": "function"
+  }, 
+  {
+    "inputs": [], 
+    "constant": true, 
+    "name": "registry", 
+    "outputs": [
+      {
+        "type": "address", 
+        "name": ""
+      }
+    ], 
+    "stateMutability": "view", 
+    "payable": false, 
+    "signature": "0x7b103999", 
+    "type": "function"
+  }, 
+  {
+    "inputs": [], 
+    "constant": true, 
+    "name": "owner", 
+    "outputs": [
+      {
+        "type": "address", 
+        "name": ""
+      }
+    ], 
+    "stateMutability": "view", 
+    "payable": false, 
+    "signature": "0x8da5cb5b", 
+    "type": "function"
+  }, 
+  {
+    "inputs": [], 
+    "constant": true, 
+    "name": "isOwner", 
+    "outputs": [
+      {
+        "type": "bool", 
+        "name": ""
+      }
+    ], 
+    "stateMutability": "view", 
+    "payable": false, 
+    "signature": "0x8f32d59b", 
+    "type": "function"
+  }, 
+  {
+    "inputs": [
+      {
+        "type": "address", 
+        "name": "newOwner"
+      }
+    ], 
+    "constant": false, 
+    "name": "transferOwnership", 
+    "outputs": [], 
+    "stateMutability": "nonpayable", 
+    "payable": false, 
+    "signature": "0xf2fde38b", 
+    "type": "function"
+  }, 
+  {
+    "stateMutability": "nonpayable", 
+    "inputs": [
+      {
+        "type": "address", 
+        "name": "_registry"
+      }
+    ], 
+    "signature": "constructor", 
+    "type": "constructor", 
+    "payable": false
+  }, 
+  {
+    "inputs": [
+      {
+        "indexed": false, 
+        "type": "address", 
+        "name": "token"
+      }, 
+      {
+        "indexed": false, 
+        "type": "address", 
+        "name": "bondingCurve"
+      }, 
+      {
+        "indexed": false, 
+        "type": "address", 
+        "name": "params"
+      }
+    ], 
+    "type": "event", 
+    "name": "CommunityCreated", 
+    "anonymous": false, 
+    "signature": "0xa1d5744e33f2d9cf5537c7ea77603378e4dbda6a0bebd8d33a3e613a4d401bb7"
+  }, 
+  {
+    "inputs": [
+      {
+        "indexed": true, 
+        "type": "address", 
+        "name": "previousOwner"
+      }, 
+      {
+        "indexed": true, 
+        "type": "address", 
+        "name": "newOwner"
+      }
+    ], 
+    "type": "event", 
+    "name": "OwnershipTransferred", 
+    "anonymous": false, 
+    "signature": "0x8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0"
+  }, 
+  {
+    "inputs": [
+      {
+        "type": "string", 
+        "name": "name"
+      }, 
+      {
+        "type": "string", 
+        "name": "symbol"
+      }, 
+      {
+        "type": "address", 
+        "name": "collateralExpression"
+      }, 
+      {
+        "type": "uint256", 
+        "name": "bondingLiquiditySpread"
+      }, 
+      {
+        "type": "uint256", 
+        "name": "paramsExpirationTime"
+      }, 
+      {
+        "type": "uint256", 
+        "name": "paramsMinParticipationPct"
+      }, 
+      {
+        "type": "uint256", 
+        "name": "paramsSupportRequiredPct"
+      }
+    ], 
+    "constant": false, 
+    "name": "create", 
+    "outputs": [
+      {
+        "type": "address", 
+        "name": ""
+      }, 
+      {
+        "type": "address", 
+        "name": ""
+      }, 
+      {
+        "type": "address", 
+        "name": ""
+      }
+    ], 
+    "stateMutability": "nonpayable", 
+    "payable": false, 
+    "signature": "0x1efb49b5", 
+    "type": "function"
+  }
+]
