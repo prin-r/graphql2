@@ -1,0 +1,29 @@
+[
+  {
+    "inputs": [
+      {
+        "type": "uint256[]", 
+        "name": "data"
+      }, 
+      {
+        "type": "uint256", 
+        "name": "size"
+      }
+    ], 
+    "constant": true, 
+    "name": "aggregate", 
+    "outputs": [
+      {
+        "type": "uint256", 
+        "name": "result"
+      }, 
+      {
+        "type": "bool", 
+        "name": "ok"
+      }
+    ], 
+    "stateMutability": "pure", 
+    "payable": false, 
+    "type": "function"
+  }
+]
