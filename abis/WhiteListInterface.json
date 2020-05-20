@@ -1,0 +1,21 @@
+[
+  {
+    "inputs": [
+      {
+        "type": "address", 
+        "name": "reader"
+      }
+    ], 
+    "constant": true, 
+    "name": "verify", 
+    "outputs": [
+      {
+        "type": "bool", 
+        "name": ""
+      }
+    ], 
+    "stateMutability": "view", 
+    "payable": false, 
+    "type": "function"
+  }
+]
