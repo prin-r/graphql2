@@ -1,0 +1,466 @@
+[
+  {
+    "inputs": [
+      {
+        "type": "uint256", 
+        "name": ""
+      }
+    ], 
+    "constant": true, 
+    "name": "proposals", 
+    "outputs": [
+      {
+        "type": "uint256", 
+        "name": "changesCount"
+      }, 
+      {
+        "type": "uint256", 
+        "name": "snapshotNonce"
+      }, 
+      {
+        "type": "uint256", 
+        "name": "expirationTime"
+      }, 
+      {
+        "type": "uint256", 
+        "name": "voteSupportRequiredPct"
+      }, 
+      {
+        "type": "uint256", 
+        "name": "voteMinParticipation"
+      }, 
+      {
+        "type": "uint256", 
+        "name": "totalVotingPower"
+      }, 
+      {
+        "type": "uint256", 
+        "name": "yesCount"
+      }, 
+      {
+        "type": "uint256", 
+        "name": "noCount"
+      }, 
+      {
+        "type": "uint8", 
+        "name": "proposalState"
+      }
+    ], 
+    "stateMutability": "view", 
+    "payable": false, 
+    "signature": "0x013cf08b", 
+    "type": "function"
+  }, 
+  {
+    "inputs": [], 
+    "constant": false, 
+    "name": "renounceOwnership", 
+    "outputs": [], 
+    "stateMutability": "nonpayable", 
+    "payable": false, 
+    "signature": "0x715018a6", 
+    "type": "function"
+  }, 
+  {
+    "inputs": [], 
+    "constant": true, 
+    "name": "owner", 
+    "outputs": [
+      {
+        "type": "address", 
+        "name": ""
+      }
+    ], 
+    "stateMutability": "view", 
+    "payable": false, 
+    "signature": "0x8da5cb5b", 
+    "type": "function"
+  }, 
+  {
+    "inputs": [], 
+    "constant": true, 
+    "name": "isOwner", 
+    "outputs": [
+      {
+        "type": "bool", 
+        "name": ""
+      }
+    ], 
+    "stateMutability": "view", 
+    "payable": false, 
+    "signature": "0x8f32d59b", 
+    "type": "function"
+  }, 
+  {
+    "inputs": [
+      {
+        "type": "bytes32", 
+        "name": ""
+      }
+    ], 
+    "constant": true, 
+    "name": "params", 
+    "outputs": [
+      {
+        "type": "bool", 
+        "name": "existed"
+      }, 
+      {
+        "type": "uint256", 
+        "name": "value"
+      }
+    ], 
+    "stateMutability": "view", 
+    "payable": false, 
+    "signature": "0xdc6ab527", 
+    "type": "function"
+  }, 
+  {
+    "inputs": [
+      {
+        "type": "address", 
+        "name": "newOwner"
+      }
+    ], 
+    "constant": false, 
+    "name": "transferOwnership", 
+    "outputs": [], 
+    "stateMutability": "nonpayable", 
+    "payable": false, 
+    "signature": "0xf2fde38b", 
+    "type": "function"
+  }, 
+  {
+    "inputs": [], 
+    "constant": true, 
+    "name": "token", 
+    "outputs": [
+      {
+        "type": "address", 
+        "name": ""
+      }
+    ], 
+    "stateMutability": "view", 
+    "payable": false, 
+    "signature": "0xfc0c546a", 
+    "type": "function"
+  }, 
+  {
+    "stateMutability": "nonpayable", 
+    "inputs": [
+      {
+        "type": "address", 
+        "name": "_token"
+      }
+    ], 
+    "type": "constructor", 
+    "payable": false
+  }, 
+  {
+    "inputs": [
+      {
+        "indexed": true, 
+        "type": "uint256", 
+        "name": "proposalId"
+      }, 
+      {
+        "indexed": true, 
+        "type": "address", 
+        "name": "proposer"
+      }, 
+      {
+        "indexed": false, 
+        "type": "bytes32", 
+        "name": "reasonHash"
+      }
+    ], 
+    "type": "event", 
+    "name": "ProposalProposed", 
+    "anonymous": false, 
+    "signature": "0xaf387ed5b07e340f26253bc3621b32d4cfb9e83f2c3c6ae9c26bb840e2eb3c3e"
+  }, 
+  {
+    "inputs": [
+      {
+        "indexed": true, 
+        "type": "uint256", 
+        "name": "proposalId"
+      }, 
+      {
+        "indexed": true, 
+        "type": "address", 
+        "name": "voter"
+      }, 
+      {
+        "indexed": false, 
+        "type": "bool", 
+        "name": "vote"
+      }, 
+      {
+        "indexed": false, 
+        "type": "uint256", 
+        "name": "votingPower"
+      }
+    ], 
+    "type": "event", 
+    "name": "ProposalVoted", 
+    "anonymous": false, 
+    "signature": "0x78975aaf742630489badd22949b88ac50eaaea576339ee05440b671a33bfb6a9"
+  }, 
+  {
+    "inputs": [
+      {
+        "indexed": true, 
+        "type": "uint256", 
+        "name": "proposalId"
+      }
+    ], 
+    "type": "event", 
+    "name": "ProposalAccepted", 
+    "anonymous": false, 
+    "signature": "0xd24c2047577899547bacebb29e319fc7d73f6712b5adb401d45556f34bb2aa3b"
+  }, 
+  {
+    "inputs": [
+      {
+        "indexed": true, 
+        "type": "uint256", 
+        "name": "proposalId"
+      }
+    ], 
+    "type": "event", 
+    "name": "ProposalRejected", 
+    "anonymous": false, 
+    "signature": "0xd92fba445edb3153b571e6df782d7a66fd0ce668519273670820ee3a86da0ef4"
+  }, 
+  {
+    "inputs": [
+      {
+        "indexed": true, 
+        "type": "bytes32", 
+        "name": "key"
+      }, 
+      {
+        "indexed": false, 
+        "type": "uint256", 
+        "name": "value"
+      }
+    ], 
+    "type": "event", 
+    "name": "ParameterChanged", 
+    "anonymous": false, 
+    "signature": "0x9b900726daef362ccb7ef4037118922e973973109c4d10b5c19277bddd59e048"
+  }, 
+  {
+    "inputs": [
+      {
+        "indexed": true, 
+        "type": "uint256", 
+        "name": "proposalId"
+      }, 
+      {
+        "indexed": true, 
+        "type": "bytes32", 
+        "name": "key"
+      }, 
+      {
+        "indexed": false, 
+        "type": "uint256", 
+        "name": "value"
+      }
+    ], 
+    "type": "event", 
+    "name": "ParameterProposed", 
+    "anonymous": false, 
+    "signature": "0x9cd4ad4753b9bb55a7067bdd219d6c1443d1f491fe6ac4a080d2f23de2560ab2"
+  }, 
+  {
+    "inputs": [
+      {
+        "indexed": true, 
+        "type": "address", 
+        "name": "previousOwner"
+      }, 
+      {
+        "indexed": true, 
+        "type": "address", 
+        "name": "newOwner"
+      }
+    ], 
+    "type": "event", 
+    "name": "OwnershipTransferred", 
+    "anonymous": false, 
+    "signature": "0x8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0"
+  }, 
+  {
+    "inputs": [
+      {
+        "type": "bytes8", 
+        "name": "namespace"
+      }, 
+      {
+        "type": "bytes24", 
+        "name": "key"
+      }
+    ], 
+    "constant": true, 
+    "name": "get", 
+    "outputs": [
+      {
+        "type": "uint256", 
+        "name": ""
+      }
+    ], 
+    "stateMutability": "view", 
+    "payable": false, 
+    "signature": "0x03986353", 
+    "type": "function"
+  }, 
+  {
+    "inputs": [
+      {
+        "type": "bytes32", 
+        "name": "rawKey"
+      }
+    ], 
+    "constant": true, 
+    "name": "getRaw", 
+    "outputs": [
+      {
+        "type": "uint256", 
+        "name": ""
+      }
+    ], 
+    "stateMutability": "view", 
+    "payable": false, 
+    "signature": "0x7636ede7", 
+    "type": "function"
+  }, 
+  {
+    "inputs": [
+      {
+        "type": "bytes8", 
+        "name": "namespace"
+      }, 
+      {
+        "type": "bytes24[]", 
+        "name": "keys"
+      }, 
+      {
+        "type": "uint256[]", 
+        "name": "values"
+      }
+    ], 
+    "constant": false, 
+    "name": "set", 
+    "outputs": [], 
+    "stateMutability": "nonpayable", 
+    "payable": false, 
+    "signature": "0x7df18497", 
+    "type": "function"
+  }, 
+  {
+    "inputs": [
+      {
+        "type": "bytes32[]", 
+        "name": "rawKeys"
+      }, 
+      {
+        "type": "uint256[]", 
+        "name": "values"
+      }
+    ], 
+    "constant": false, 
+    "name": "setRaw", 
+    "outputs": [], 
+    "stateMutability": "nonpayable", 
+    "payable": false, 
+    "signature": "0x3e8981e7", 
+    "type": "function"
+  }, 
+  {
+    "inputs": [
+      {
+        "type": "uint256", 
+        "name": "proposalId"
+      }, 
+      {
+        "type": "uint256", 
+        "name": "changeIndex"
+      }
+    ], 
+    "constant": true, 
+    "name": "getProposalChange", 
+    "outputs": [
+      {
+        "type": "bytes32", 
+        "name": ""
+      }, 
+      {
+        "type": "uint256", 
+        "name": ""
+      }
+    ], 
+    "stateMutability": "view", 
+    "payable": false, 
+    "signature": "0x39be46bc", 
+    "type": "function"
+  }, 
+  {
+    "inputs": [
+      {
+        "type": "bytes32", 
+        "name": "reasonHash"
+      }, 
+      {
+        "type": "bytes32[]", 
+        "name": "keys"
+      }, 
+      {
+        "type": "uint256[]", 
+        "name": "values"
+      }
+    ], 
+    "constant": false, 
+    "name": "propose", 
+    "outputs": [], 
+    "stateMutability": "nonpayable", 
+    "payable": false, 
+    "signature": "0x009d3705", 
+    "type": "function"
+  }, 
+  {
+    "inputs": [
+      {
+        "type": "uint256", 
+        "name": "proposalId"
+      }, 
+      {
+        "type": "bool", 
+        "name": "accepted"
+      }
+    ], 
+    "constant": false, 
+    "name": "vote", 
+    "outputs": [], 
+    "stateMutability": "nonpayable", 
+    "payable": false, 
+    "signature": "0xc9d27afe", 
+    "type": "function"
+  }, 
+  {
+    "inputs": [
+      {
+        "type": "uint256", 
+        "name": "proposalId"
+      }
+    ], 
+    "constant": false, 
+    "name": "resolve", 
+    "outputs": [], 
+    "stateMutability": "nonpayable", 
+    "payable": false, 
+    "signature": "0x4f896d4f", 
+    "type": "function"
+  }
+]
