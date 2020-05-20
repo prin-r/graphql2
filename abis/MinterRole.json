@@ -1,0 +1,74 @@
+[
+  {
+    "stateMutability": "nonpayable", 
+    "inputs": [], 
+    "type": "constructor", 
+    "payable": false
+  }, 
+  {
+    "inputs": [
+      {
+        "indexed": true, 
+        "type": "address", 
+        "name": "account"
+      }
+    ], 
+    "type": "event", 
+    "name": "MinterAdded", 
+    "anonymous": false
+  }, 
+  {
+    "inputs": [
+      {
+        "indexed": true, 
+        "type": "address", 
+        "name": "account"
+      }
+    ], 
+    "type": "event", 
+    "name": "MinterRemoved", 
+    "anonymous": false
+  }, 
+  {
+    "inputs": [
+      {
+        "type": "address", 
+        "name": "account"
+      }
+    ], 
+    "constant": true, 
+    "name": "isMinter", 
+    "outputs": [
+      {
+        "type": "bool", 
+        "name": ""
+      }
+    ], 
+    "stateMutability": "view", 
+    "payable": false, 
+    "type": "function"
+  }, 
+  {
+    "inputs": [
+      {
+        "type": "address", 
+        "name": "account"
+      }
+    ], 
+    "constant": false, 
+    "name": "addMinter", 
+    "outputs": [], 
+    "stateMutability": "nonpayable", 
+    "payable": false, 
+    "type": "function"
+  }, 
+  {
+    "inputs": [], 
+    "constant": false, 
+    "name": "renounceMinter", 
+    "outputs": [], 
+    "stateMutability": "nonpayable", 
+    "payable": false, 
+    "type": "function"
+  }
+]
