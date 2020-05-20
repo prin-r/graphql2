@@ -1,0 +1,52 @@
+[
+  {
+    "inputs": [
+      {
+        "indexed": false, 
+        "type": "address", 
+        "name": "mtcd"
+      }, 
+      {
+        "indexed": false, 
+        "type": "address", 
+        "name": "creator"
+      }
+    ], 
+    "type": "event", 
+    "name": "MultiSigTCDCreated", 
+    "anonymous": false, 
+    "signature": "0x4b337eb2f585616abaced583d287b11f1e6223a6388e2a80993ad7c327fb07cc"
+  }, 
+  {
+    "inputs": [
+      {
+        "type": "bytes8", 
+        "name": "prefix"
+      }, 
+      {
+        "type": "address", 
+        "name": "bondingCurve"
+      }, 
+      {
+        "type": "address", 
+        "name": "registry"
+      }, 
+      {
+        "type": "address", 
+        "name": "params"
+      }
+    ], 
+    "constant": false, 
+    "name": "createMultiSigTCD", 
+    "outputs": [
+      {
+        "type": "address", 
+        "name": ""
+      }
+    ], 
+    "stateMutability": "nonpayable", 
+    "payable": false, 
+    "signature": "0x377a2269", 
+    "type": "function"
+  }
+]
