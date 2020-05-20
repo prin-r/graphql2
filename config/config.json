@@ -1,0 +1,14 @@
+{
+  "blockParentHash": "0x0d5cba7901de5b4538c794dcf0c7ca517aabbb2adef45da0e6e6131e2222dbf5", 
+  "network": "development", 
+  "blockHash": "0xffc265f641f32fdc9d52a90546a2f56171f97d7a366a9ca9c3cb356ea41ff3d3", 
+  "blockId": 16, 
+  "MultiSigTCDFactory": "0x9b31b63F7761B4EDD1f870A52972AEd544c5d929", 
+  "CommunityFactory": "0x55a48bD818C00057E728da2c00e70a753f8A4281", 
+  "blockTime": 1569243134, 
+  "bandRegistry": "0xc6D23729d737d7dfCA4E64Da07eac441C0566B7E", 
+  "AggTCDFactory": "0x731C4e45595cF8dF9CD234228e83Ec4A1fE37941", 
+  "OffchainAggTCDFactory": "0xBf53Bef564Bb8D014C34556da882d0028B40Ff4C", 
+  "eventDBHost": "postgresql://postgres:1234@172.18.0.6:5432/events", 
+  "TCRFactory": "0x91D67cf1A3878FDa11A11DC18712aa6be84C4a2C"
+}
