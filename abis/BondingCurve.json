@@ -1,0 +1,393 @@
+[
+  {
+    "inputs": [], 
+    "constant": true, 
+    "name": "currentMintedTokens", 
+    "outputs": [
+      {
+        "type": "uint256", 
+        "name": ""
+      }
+    ], 
+    "stateMutability": "view", 
+    "payable": false, 
+    "signature": "0x2de22cdb", 
+    "type": "function"
+  }, 
+  {
+    "inputs": [], 
+    "constant": true, 
+    "name": "lastInflationTime", 
+    "outputs": [
+      {
+        "type": "uint256", 
+        "name": ""
+      }
+    ], 
+    "stateMutability": "view", 
+    "payable": false, 
+    "signature": "0x703204ca", 
+    "type": "function"
+  }, 
+  {
+    "inputs": [], 
+    "constant": true, 
+    "name": "currentCollateral", 
+    "outputs": [
+      {
+        "type": "uint256", 
+        "name": ""
+      }
+    ], 
+    "stateMutability": "view", 
+    "payable": false, 
+    "signature": "0x92e3601a", 
+    "type": "function"
+  }, 
+  {
+    "inputs": [], 
+    "constant": true, 
+    "name": "collateralToken", 
+    "outputs": [
+      {
+        "type": "address", 
+        "name": ""
+      }
+    ], 
+    "stateMutability": "view", 
+    "payable": false, 
+    "signature": "0xb2016bd4", 
+    "type": "function"
+  }, 
+  {
+    "inputs": [], 
+    "constant": true, 
+    "name": "params", 
+    "outputs": [
+      {
+        "type": "address", 
+        "name": ""
+      }
+    ], 
+    "stateMutability": "view", 
+    "payable": false, 
+    "signature": "0xcff0ab96", 
+    "type": "function"
+  }, 
+  {
+    "inputs": [], 
+    "constant": true, 
+    "name": "bondedToken", 
+    "outputs": [
+      {
+        "type": "address", 
+        "name": ""
+      }
+    ], 
+    "stateMutability": "view", 
+    "payable": false, 
+    "signature": "0xe36a4ec7", 
+    "type": "function"
+  }, 
+  {
+    "stateMutability": "nonpayable", 
+    "inputs": [
+      {
+        "type": "address", 
+        "name": "_collateralToken"
+      }, 
+      {
+        "type": "address", 
+        "name": "_bondedToken"
+      }, 
+      {
+        "type": "address", 
+        "name": "_params"
+      }
+    ], 
+    "type": "constructor", 
+    "payable": false
+  }, 
+  {
+    "inputs": [
+      {
+        "indexed": true, 
+        "type": "address", 
+        "name": "buyer"
+      }, 
+      {
+        "indexed": false, 
+        "type": "uint256", 
+        "name": "bondedTokenAmount"
+      }, 
+      {
+        "indexed": false, 
+        "type": "uint256", 
+        "name": "collateralTokenAmount"
+      }
+    ], 
+    "type": "event", 
+    "name": "Buy", 
+    "anonymous": false, 
+    "signature": "0x1cbc5ab135991bd2b6a4b034a04aa2aa086dac1371cb9b16b8b5e2ed6b036bed"
+  }, 
+  {
+    "inputs": [
+      {
+        "indexed": true, 
+        "type": "address", 
+        "name": "seller"
+      }, 
+      {
+        "indexed": false, 
+        "type": "uint256", 
+        "name": "bondedTokenAmount"
+      }, 
+      {
+        "indexed": false, 
+        "type": "uint256", 
+        "name": "collateralTokenAmount"
+      }
+    ], 
+    "type": "event", 
+    "name": "Sell", 
+    "anonymous": false, 
+    "signature": "0xed7a144fad14804d5c249145e3e0e2b63a9eb455b76aee5bc92d711e9bba3e4a"
+  }, 
+  {
+    "inputs": [
+      {
+        "indexed": true, 
+        "type": "address", 
+        "name": "burner"
+      }, 
+      {
+        "indexed": false, 
+        "type": "uint256", 
+        "name": "burnedAmount"
+      }
+    ], 
+    "type": "event", 
+    "name": "Deflate", 
+    "anonymous": false, 
+    "signature": "0x2a2a2de2f1e31ced222422889d172d7563d7c278fef9601edacfc81a00439bc5"
+  }, 
+  {
+    "inputs": [
+      {
+        "indexed": true, 
+        "type": "address", 
+        "name": "beneficiary"
+      }, 
+      {
+        "indexed": false, 
+        "type": "uint256", 
+        "name": "bondedTokenAmount"
+      }
+    ], 
+    "type": "event", 
+    "name": "RevenueCollect", 
+    "anonymous": false, 
+    "signature": "0xee67abd0680fa5cb1d730ef23e4ff60ba5eac317d178469e599cdf8718101de8"
+  }, 
+  {
+    "inputs": [], 
+    "constant": true, 
+    "name": "getRevenueBeneficiary", 
+    "outputs": [
+      {
+        "type": "address", 
+        "name": ""
+      }
+    ], 
+    "stateMutability": "view", 
+    "payable": false, 
+    "signature": "0xf5ce4065", 
+    "type": "function"
+  }, 
+  {
+    "inputs": [], 
+    "constant": true, 
+    "name": "getInflationRateNumerator", 
+    "outputs": [
+      {
+        "type": "uint256", 
+        "name": ""
+      }
+    ], 
+    "stateMutability": "view", 
+    "payable": false, 
+    "signature": "0x5a907adf", 
+    "type": "function"
+  }, 
+  {
+    "inputs": [], 
+    "constant": true, 
+    "name": "getLiquiditySpreadNumerator", 
+    "outputs": [
+      {
+        "type": "uint256", 
+        "name": ""
+      }
+    ], 
+    "stateMutability": "view", 
+    "payable": false, 
+    "signature": "0x67b9c493", 
+    "type": "function"
+  }, 
+  {
+    "inputs": [], 
+    "constant": true, 
+    "name": "getCollateralExpression", 
+    "outputs": [
+      {
+        "type": "address", 
+        "name": ""
+      }
+    ], 
+    "stateMutability": "view", 
+    "payable": false, 
+    "signature": "0x716ab88d", 
+    "type": "function"
+  }, 
+  {
+    "inputs": [
+      {
+        "type": "uint256", 
+        "name": "tokenSupply"
+      }
+    ], 
+    "constant": true, 
+    "name": "getCollateralAtSupply", 
+    "outputs": [
+      {
+        "type": "uint256", 
+        "name": ""
+      }
+    ], 
+    "stateMutability": "view", 
+    "payable": false, 
+    "signature": "0x06f35020", 
+    "type": "function"
+  }, 
+  {
+    "inputs": [], 
+    "constant": true, 
+    "name": "curveMultiplier", 
+    "outputs": [
+      {
+        "type": "uint256", 
+        "name": ""
+      }
+    ], 
+    "stateMutability": "view", 
+    "payable": false, 
+    "signature": "0x0429e765", 
+    "type": "function"
+  }, 
+  {
+    "inputs": [
+      {
+        "type": "uint256", 
+        "name": "tokenValue"
+      }
+    ], 
+    "constant": true, 
+    "name": "getBuyPrice", 
+    "outputs": [
+      {
+        "type": "uint256", 
+        "name": ""
+      }
+    ], 
+    "stateMutability": "view", 
+    "payable": false, 
+    "signature": "0x08d4db14", 
+    "type": "function"
+  }, 
+  {
+    "inputs": [
+      {
+        "type": "uint256", 
+        "name": "tokenValue"
+      }
+    ], 
+    "constant": true, 
+    "name": "getSellPrice", 
+    "outputs": [
+      {
+        "type": "uint256", 
+        "name": ""
+      }
+    ], 
+    "stateMutability": "view", 
+    "payable": false, 
+    "signature": "0xba730e53", 
+    "type": "function"
+  }, 
+  {
+    "inputs": [
+      {
+        "type": "address", 
+        "name": "buyer"
+      }, 
+      {
+        "type": "uint256", 
+        "name": "priceLimit"
+      }, 
+      {
+        "type": "uint256", 
+        "name": "buyAmount"
+      }
+    ], 
+    "constant": false, 
+    "name": "buy", 
+    "outputs": [], 
+    "stateMutability": "nonpayable", 
+    "payable": false, 
+    "signature": "0xa59ac6dd", 
+    "type": "function"
+  }, 
+  {
+    "inputs": [
+      {
+        "type": "address", 
+        "name": "seller"
+      }, 
+      {
+        "type": "uint256", 
+        "name": "sellAmount"
+      }, 
+      {
+        "type": "uint256", 
+        "name": "priceLimit"
+      }
+    ], 
+    "constant": false, 
+    "name": "sell", 
+    "outputs": [], 
+    "stateMutability": "nonpayable", 
+    "payable": false, 
+    "signature": "0x6a272462", 
+    "type": "function"
+  }, 
+  {
+    "inputs": [
+      {
+        "type": "address", 
+        "name": "burner"
+      }, 
+      {
+        "type": "uint256", 
+        "name": "burnAmount"
+      }
+    ], 
+    "constant": false, 
+    "name": "deflate", 
+    "outputs": [], 
+    "stateMutability": "nonpayable", 
+    "payable": false, 
+    "signature": "0xeef0e79d", 
+    "type": "function"
+  }
+]
