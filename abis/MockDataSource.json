@@ -1,0 +1,205 @@
+[
+  {
+    "inputs": [], 
+    "constant": true, 
+    "name": "detail", 
+    "outputs": [
+      {
+        "type": "string", 
+        "name": ""
+      }
+    ], 
+    "stateMutability": "view", 
+    "payable": false, 
+    "type": "function"
+  }, 
+  {
+    "inputs": [], 
+    "constant": false, 
+    "name": "renounceOwnership", 
+    "outputs": [], 
+    "stateMutability": "nonpayable", 
+    "payable": false, 
+    "type": "function"
+  }, 
+  {
+    "inputs": [
+      {
+        "type": "bytes", 
+        "name": ""
+      }
+    ], 
+    "constant": true, 
+    "name": "exists", 
+    "outputs": [
+      {
+        "type": "bool", 
+        "name": ""
+      }
+    ], 
+    "stateMutability": "view", 
+    "payable": false, 
+    "type": "function"
+  }, 
+  {
+    "inputs": [], 
+    "constant": true, 
+    "name": "owner", 
+    "outputs": [
+      {
+        "type": "address", 
+        "name": ""
+      }
+    ], 
+    "stateMutability": "view", 
+    "payable": false, 
+    "type": "function"
+  }, 
+  {
+    "inputs": [], 
+    "constant": true, 
+    "name": "isOwner", 
+    "outputs": [
+      {
+        "type": "bool", 
+        "name": ""
+      }
+    ], 
+    "stateMutability": "view", 
+    "payable": false, 
+    "type": "function"
+  }, 
+  {
+    "inputs": [
+      {
+        "type": "bytes", 
+        "name": ""
+      }
+    ], 
+    "constant": true, 
+    "name": "values", 
+    "outputs": [
+      {
+        "type": "uint256", 
+        "name": ""
+      }
+    ], 
+    "stateMutability": "view", 
+    "payable": false, 
+    "type": "function"
+  }, 
+  {
+    "inputs": [
+      {
+        "type": "address", 
+        "name": "newOwner"
+      }
+    ], 
+    "constant": false, 
+    "name": "transferOwnership", 
+    "outputs": [], 
+    "stateMutability": "nonpayable", 
+    "payable": false, 
+    "type": "function"
+  }, 
+  {
+    "stateMutability": "nonpayable", 
+    "inputs": [
+      {
+        "type": "string", 
+        "name": "_detail"
+      }
+    ], 
+    "type": "constructor", 
+    "payable": false
+  }, 
+  {
+    "inputs": [
+      {
+        "indexed": false, 
+        "type": "bytes", 
+        "name": "key"
+      }, 
+      {
+        "indexed": false, 
+        "type": "uint256", 
+        "name": "value"
+      }
+    ], 
+    "type": "event", 
+    "name": "DataPointSet", 
+    "anonymous": false
+  }, 
+  {
+    "inputs": [
+      {
+        "indexed": true, 
+        "type": "address", 
+        "name": "previousOwner"
+      }, 
+      {
+        "indexed": true, 
+        "type": "address", 
+        "name": "newOwner"
+      }
+    ], 
+    "type": "event", 
+    "name": "OwnershipTransferred", 
+    "anonymous": false
+  }, 
+  {
+    "inputs": [
+      {
+        "type": "bytes", 
+        "name": "key"
+      }, 
+      {
+        "type": "uint256", 
+        "name": "value"
+      }
+    ], 
+    "constant": false, 
+    "name": "setNumber", 
+    "outputs": [], 
+    "stateMutability": "nonpayable", 
+    "payable": false, 
+    "type": "function"
+  }, 
+  {
+    "inputs": [
+      {
+        "type": "bytes", 
+        "name": "key"
+      }, 
+      {
+        "type": "bytes32", 
+        "name": "value"
+      }
+    ], 
+    "constant": false, 
+    "name": "setBytes32", 
+    "outputs": [], 
+    "stateMutability": "nonpayable", 
+    "payable": false, 
+    "type": "function"
+  }, 
+  {
+    "inputs": [
+      {
+        "type": "bytes", 
+        "name": "key"
+      }
+    ], 
+    "constant": true, 
+    "name": "get", 
+    "outputs": [
+      {
+        "type": "uint256", 
+        "name": ""
+      }
+    ], 
+    "stateMutability": "view", 
+    "payable": false, 
+    "type": "function"
+  }
+]
