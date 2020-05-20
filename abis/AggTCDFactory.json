@@ -1,0 +1,52 @@
+[
+  {
+    "inputs": [
+      {
+        "indexed": false, 
+        "type": "address", 
+        "name": "atcd"
+      }, 
+      {
+        "indexed": false, 
+        "type": "address", 
+        "name": "creator"
+      }
+    ], 
+    "type": "event", 
+    "name": "AggTCDCreated", 
+    "anonymous": false, 
+    "signature": "0x29bb7fd4c9b5c8be006625c697d6c59ef586c65176754ce6361c454cee153f0d"
+  }, 
+  {
+    "inputs": [
+      {
+        "type": "bytes8", 
+        "name": "prefix"
+      }, 
+      {
+        "type": "address", 
+        "name": "bondingCurve"
+      }, 
+      {
+        "type": "address", 
+        "name": "registry"
+      }, 
+      {
+        "type": "address", 
+        "name": "params"
+      }
+    ], 
+    "constant": false, 
+    "name": "createTCD", 
+    "outputs": [
+      {
+        "type": "address", 
+        "name": ""
+      }
+    ], 
+    "stateMutability": "nonpayable", 
+    "payable": false, 
+    "signature": "0x9bc3f138", 
+    "type": "function"
+  }
+]
