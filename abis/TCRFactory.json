@@ -1,0 +1,48 @@
+[
+  {
+    "inputs": [
+      {
+        "indexed": false, 
+        "type": "address", 
+        "name": "tcr"
+      }, 
+      {
+        "indexed": false, 
+        "type": "address", 
+        "name": "creator"
+      }
+    ], 
+    "type": "event", 
+    "name": "TCRCreated", 
+    "anonymous": false, 
+    "signature": "0xd6ce5618b8a47e09608295ecc70f389a1e8f2b6cd14e55daddec6242cac9f907"
+  }, 
+  {
+    "inputs": [
+      {
+        "type": "bytes8", 
+        "name": "prefix"
+      }, 
+      {
+        "type": "address", 
+        "name": "params"
+      }, 
+      {
+        "type": "address", 
+        "name": "registry"
+      }
+    ], 
+    "constant": false, 
+    "name": "createTCR", 
+    "outputs": [
+      {
+        "type": "address", 
+        "name": ""
+      }
+    ], 
+    "stateMutability": "nonpayable", 
+    "payable": false, 
+    "signature": "0x659ddd89", 
+    "type": "function"
+  }
+]
