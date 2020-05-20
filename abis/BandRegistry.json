@@ -1,0 +1,186 @@
+[
+  {
+    "inputs": [], 
+    "constant": true, 
+    "name": "band", 
+    "outputs": [
+      {
+        "type": "address", 
+        "name": ""
+      }
+    ], 
+    "stateMutability": "view", 
+    "payable": false, 
+    "signature": "0x10ea891a", 
+    "type": "function"
+  }, 
+  {
+    "inputs": [], 
+    "constant": true, 
+    "name": "whiteList", 
+    "outputs": [
+      {
+        "type": "address", 
+        "name": ""
+      }
+    ], 
+    "stateMutability": "view", 
+    "payable": false, 
+    "signature": "0x3544a864", 
+    "type": "function"
+  }, 
+  {
+    "inputs": [], 
+    "constant": false, 
+    "name": "renounceOwnership", 
+    "outputs": [], 
+    "stateMutability": "nonpayable", 
+    "payable": false, 
+    "signature": "0x715018a6", 
+    "type": "function"
+  }, 
+  {
+    "inputs": [], 
+    "constant": true, 
+    "name": "owner", 
+    "outputs": [
+      {
+        "type": "address", 
+        "name": ""
+      }
+    ], 
+    "stateMutability": "view", 
+    "payable": false, 
+    "signature": "0x8da5cb5b", 
+    "type": "function"
+  }, 
+  {
+    "inputs": [], 
+    "constant": true, 
+    "name": "isOwner", 
+    "outputs": [
+      {
+        "type": "bool", 
+        "name": ""
+      }
+    ], 
+    "stateMutability": "view", 
+    "payable": false, 
+    "signature": "0x8f32d59b", 
+    "type": "function"
+  }, 
+  {
+    "inputs": [], 
+    "constant": true, 
+    "name": "exchange", 
+    "outputs": [
+      {
+        "type": "address", 
+        "name": ""
+      }
+    ], 
+    "stateMutability": "view", 
+    "payable": false, 
+    "signature": "0xd2f7265a", 
+    "type": "function"
+  }, 
+  {
+    "inputs": [
+      {
+        "type": "address", 
+        "name": "newOwner"
+      }
+    ], 
+    "constant": false, 
+    "name": "transferOwnership", 
+    "outputs": [], 
+    "stateMutability": "nonpayable", 
+    "payable": false, 
+    "signature": "0xf2fde38b", 
+    "type": "function"
+  }, 
+  {
+    "stateMutability": "nonpayable", 
+    "inputs": [
+      {
+        "type": "address", 
+        "name": "_band"
+      }, 
+      {
+        "type": "address", 
+        "name": "_exchange"
+      }
+    ], 
+    "signature": "constructor", 
+    "type": "constructor", 
+    "payable": false
+  }, 
+  {
+    "inputs": [
+      {
+        "indexed": true, 
+        "type": "address", 
+        "name": "previousOwner"
+      }, 
+      {
+        "indexed": true, 
+        "type": "address", 
+        "name": "newOwner"
+      }
+    ], 
+    "type": "event", 
+    "name": "OwnershipTransferred", 
+    "anonymous": false, 
+    "signature": "0x8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0"
+  }, 
+  {
+    "inputs": [
+      {
+        "type": "address", 
+        "name": "reader"
+      }
+    ], 
+    "constant": true, 
+    "name": "verify", 
+    "outputs": [
+      {
+        "type": "bool", 
+        "name": ""
+      }
+    ], 
+    "stateMutability": "view", 
+    "payable": false, 
+    "signature": "0x63a9c3d7", 
+    "type": "function"
+  }, 
+  {
+    "inputs": [
+      {
+        "type": "address", 
+        "name": "_whiteList"
+      }
+    ], 
+    "constant": false, 
+    "name": "setWhiteList", 
+    "outputs": [], 
+    "stateMutability": "nonpayable", 
+    "payable": false, 
+    "signature": "0x39e899ee", 
+    "type": "function"
+  }, 
+  {
+    "inputs": [
+      {
+        "type": "address", 
+        "name": "_exchange"
+      }
+    ], 
+    "constant": false, 
+    "name": "setExchange", 
+    "outputs": [], 
+    "stateMutability": "nonpayable", 
+    "payable": false, 
+    "signature": "0x67b1f5df", 
+    "type": "function"
+  }
+]
