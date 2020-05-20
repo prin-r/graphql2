@@ -1,0 +1,240 @@
+[
+  {
+    "inputs": [
+      {
+        "type": "address", 
+        "name": ""
+      }
+    ], 
+    "constant": true, 
+    "name": "isOwner", 
+    "outputs": [
+      {
+        "type": "bool", 
+        "name": ""
+      }
+    ], 
+    "stateMutability": "view", 
+    "payable": false, 
+    "type": "function"
+  }, 
+  {
+    "inputs": [], 
+    "constant": true, 
+    "name": "threshold", 
+    "outputs": [
+      {
+        "type": "uint256", 
+        "name": ""
+      }
+    ], 
+    "stateMutability": "view", 
+    "payable": false, 
+    "type": "function"
+  }, 
+  {
+    "inputs": [], 
+    "constant": true, 
+    "name": "nonce", 
+    "outputs": [
+      {
+        "type": "uint256", 
+        "name": ""
+      }
+    ], 
+    "stateMutability": "view", 
+    "payable": false, 
+    "type": "function"
+  }, 
+  {
+    "inputs": [], 
+    "constant": true, 
+    "name": "ownersCount", 
+    "outputs": [
+      {
+        "type": "uint256", 
+        "name": ""
+      }
+    ], 
+    "stateMutability": "view", 
+    "payable": false, 
+    "type": "function"
+  }, 
+  {
+    "inputs": [], 
+    "constant": true, 
+    "name": "MAX_OWNER_COUNT", 
+    "outputs": [
+      {
+        "type": "uint256", 
+        "name": ""
+      }
+    ], 
+    "stateMutability": "view", 
+    "payable": false, 
+    "type": "function"
+  }, 
+  {
+    "stateMutability": "nonpayable", 
+    "inputs": [
+      {
+        "type": "uint256", 
+        "name": "_threshold"
+      }, 
+      {
+        "type": "address[]", 
+        "name": "_owners"
+      }
+    ], 
+    "type": "constructor", 
+    "payable": false
+  }, 
+  {
+    "stateMutability": "payable", 
+    "payable": true, 
+    "type": "fallback"
+  }, 
+  {
+    "inputs": [
+      {
+        "indexed": true, 
+        "type": "address", 
+        "name": "owner"
+      }
+    ], 
+    "type": "event", 
+    "name": "OwnerAdded", 
+    "anonymous": false
+  }, 
+  {
+    "inputs": [
+      {
+        "indexed": true, 
+        "type": "address", 
+        "name": "owner"
+      }
+    ], 
+    "type": "event", 
+    "name": "OwnerRemoved", 
+    "anonymous": false
+  }, 
+  {
+    "inputs": [
+      {
+        "indexed": true, 
+        "type": "uint256", 
+        "name": "newThreshold"
+      }
+    ], 
+    "type": "event", 
+    "name": "ThresholdChanged", 
+    "anonymous": false
+  }, 
+  {
+    "inputs": [
+      {
+        "indexed": true, 
+        "type": "address", 
+        "name": "destination"
+      }, 
+      {
+        "indexed": true, 
+        "type": "uint256", 
+        "name": "value"
+      }, 
+      {
+        "indexed": false, 
+        "type": "bytes", 
+        "name": "data"
+      }
+    ], 
+    "type": "event", 
+    "name": "Executed", 
+    "anonymous": false
+  }, 
+  {
+    "inputs": [
+      {
+        "indexed": true, 
+        "type": "uint256", 
+        "name": "value"
+      }, 
+      {
+        "indexed": true, 
+        "type": "address", 
+        "name": "from"
+      }
+    ], 
+    "type": "event", 
+    "name": "Received", 
+    "anonymous": false
+  }, 
+  {
+    "inputs": [
+      {
+        "type": "address", 
+        "name": "_to"
+      }, 
+      {
+        "type": "uint256", 
+        "name": "_value"
+      }, 
+      {
+        "type": "bytes", 
+        "name": "_data"
+      }, 
+      {
+        "type": "bytes", 
+        "name": "_signatures"
+      }
+    ], 
+    "constant": false, 
+    "name": "execute", 
+    "outputs": [], 
+    "stateMutability": "nonpayable", 
+    "payable": false, 
+    "type": "function"
+  }, 
+  {
+    "inputs": [
+      {
+        "type": "address", 
+        "name": "_owner"
+      }
+    ], 
+    "constant": false, 
+    "name": "addOwner", 
+    "outputs": [], 
+    "stateMutability": "nonpayable", 
+    "payable": false, 
+    "type": "function"
+  }, 
+  {
+    "inputs": [
+      {
+        "type": "address", 
+        "name": "_owner"
+      }
+    ], 
+    "constant": false, 
+    "name": "removeOwner", 
+    "outputs": [], 
+    "stateMutability": "nonpayable", 
+    "payable": false, 
+    "type": "function"
+  }, 
+  {
+    "inputs": [
+      {
+        "type": "uint256", 
+        "name": "_newThreshold"
+      }
+    ], 
+    "constant": false, 
+    "name": "changeThreshold", 
+    "outputs": [], 
+    "stateMutability": "nonpayable", 
+    "payable": false, 
+    "type": "function"
+  }
+]
