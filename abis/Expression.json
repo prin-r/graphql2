@@ -1,0 +1,21 @@
+[
+  {
+    "inputs": [
+      {
+        "type": "uint256", 
+        "name": "x"
+      }
+    ], 
+    "constant": true, 
+    "name": "evaluate", 
+    "outputs": [
+      {
+        "type": "uint256", 
+        "name": ""
+      }
+    ], 
+    "stateMutability": "view", 
+    "payable": false, 
+    "type": "function"
+  }
+]
