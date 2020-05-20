@@ -1,0 +1,69 @@
+[
+  {
+    "inputs": [], 
+    "constant": true, 
+    "name": "owner", 
+    "outputs": [
+      {
+        "type": "address", 
+        "name": ""
+      }
+    ], 
+    "stateMutability": "view", 
+    "payable": false, 
+    "signature": "0x8da5cb5b", 
+    "type": "function"
+  }, 
+  {
+    "inputs": [], 
+    "constant": true, 
+    "name": "lastCompletedMigration", 
+    "outputs": [
+      {
+        "type": "uint256", 
+        "name": ""
+      }
+    ], 
+    "stateMutability": "view", 
+    "payable": false, 
+    "signature": "0xfbdbad3c", 
+    "type": "function"
+  }, 
+  {
+    "stateMutability": "nonpayable", 
+    "inputs": [], 
+    "signature": "constructor", 
+    "type": "constructor", 
+    "payable": false
+  }, 
+  {
+    "inputs": [
+      {
+        "type": "uint256", 
+        "name": "completed"
+      }
+    ], 
+    "constant": false, 
+    "name": "setCompleted", 
+    "outputs": [], 
+    "stateMutability": "nonpayable", 
+    "payable": false, 
+    "signature": "0xfdacd576", 
+    "type": "function"
+  }, 
+  {
+    "inputs": [
+      {
+        "type": "address", 
+        "name": "newAddress"
+      }
+    ], 
+    "constant": false, 
+    "name": "upgrade", 
+    "outputs": [], 
+    "stateMutability": "nonpayable", 
+    "payable": false, 
+    "signature": "0x0900f010", 
+    "type": "function"
+  }
+]
