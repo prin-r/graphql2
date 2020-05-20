@@ -1,0 +1,52 @@
+[
+  {
+    "inputs": [
+      {
+        "indexed": false, 
+        "type": "address", 
+        "name": "mtcd"
+      }, 
+      {
+        "indexed": false, 
+        "type": "address", 
+        "name": "creator"
+      }
+    ], 
+    "type": "event", 
+    "name": "OffchainAggTCDCreated", 
+    "anonymous": false, 
+    "signature": "0x83189e8b1321bc8fdd72b8f1ab809286b07800606c146fd7638f8dd17a6dcc80"
+  }, 
+  {
+    "inputs": [
+      {
+        "type": "bytes8", 
+        "name": "prefix"
+      }, 
+      {
+        "type": "address", 
+        "name": "bondingCurve"
+      }, 
+      {
+        "type": "address", 
+        "name": "registry"
+      }, 
+      {
+        "type": "address", 
+        "name": "params"
+      }
+    ], 
+    "constant": false, 
+    "name": "createOffchainAggTCD", 
+    "outputs": [
+      {
+        "type": "address", 
+        "name": ""
+      }
+    ], 
+    "stateMutability": "nonpayable", 
+    "payable": false, 
+    "signature": "0x9c26f4b3", 
+    "type": "function"
+  }
+]
