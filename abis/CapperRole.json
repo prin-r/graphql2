@@ -1,0 +1,74 @@
+[
+  {
+    "stateMutability": "nonpayable", 
+    "inputs": [], 
+    "type": "constructor", 
+    "payable": false
+  }, 
+  {
+    "inputs": [
+      {
+        "indexed": true, 
+        "type": "address", 
+        "name": "account"
+      }
+    ], 
+    "type": "event", 
+    "name": "CapperAdded", 
+    "anonymous": false
+  }, 
+  {
+    "inputs": [
+      {
+        "indexed": true, 
+        "type": "address", 
+        "name": "account"
+      }
+    ], 
+    "type": "event", 
+    "name": "CapperRemoved", 
+    "anonymous": false
+  }, 
+  {
+    "inputs": [
+      {
+        "type": "address", 
+        "name": "account"
+      }
+    ], 
+    "constant": true, 
+    "name": "isCapper", 
+    "outputs": [
+      {
+        "type": "bool", 
+        "name": ""
+      }
+    ], 
+    "stateMutability": "view", 
+    "payable": false, 
+    "type": "function"
+  }, 
+  {
+    "inputs": [
+      {
+        "type": "address", 
+        "name": "account"
+      }
+    ], 
+    "constant": false, 
+    "name": "addCapper", 
+    "outputs": [], 
+    "stateMutability": "nonpayable", 
+    "payable": false, 
+    "type": "function"
+  }, 
+  {
+    "inputs": [], 
+    "constant": false, 
+    "name": "renounceCapper", 
+    "outputs": [], 
+    "stateMutability": "nonpayable", 
+    "payable": false, 
+    "type": "function"
+  }
+]
