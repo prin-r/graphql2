@@ -1,0 +1,11 @@
+{
+  "eventDBHost": "postgres://root:coinroot1@pricer.cvdthaqocohn.us-east-1.rds.amazonaws.com/events4real",
+  "blockId": 4293572,
+  "blockHash": "0x9e665ac5497a88894e64be510ff9d21c9eff086f06acf9b015a7f25c5ea50d3a",
+  "blockParentHash": "0x199baa8671b6d6c5d4873edb36a3452cacd9e21cc47224bacbb2ca69b2c04755",
+  "blockTime": 1556533018,
+  "bandRegistry": "0x798686B18fb1E29b073401e62a5aFB8b145bD5C8",
+  "DataSourceBookkeepingPriceAddress": "0x8B3dBb2Db70120Cf4D24c739E1c296DE98644238",
+  "DataSourceBookkeepingLotteryAddress": "0x6863019Ec1A5f675ce64699020A338Ee2256B981",
+  "DataSourceBookkeepingSportAddress": "0x7d19771a15c1314be9Bd436092A727A70Edc6482"
+}
