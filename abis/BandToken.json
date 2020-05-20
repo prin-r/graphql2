@@ -1,0 +1,510 @@
+[
+  {
+    "inputs": [], 
+    "constant": true, 
+    "name": "name", 
+    "outputs": [
+      {
+        "type": "string", 
+        "name": ""
+      }
+    ], 
+    "stateMutability": "view", 
+    "payable": false, 
+    "signature": "0x06fdde03", 
+    "type": "function"
+  }, 
+  {
+    "inputs": [
+      {
+        "type": "address", 
+        "name": "spender"
+      }, 
+      {
+        "type": "uint256", 
+        "name": "value"
+      }
+    ], 
+    "constant": false, 
+    "name": "approve", 
+    "outputs": [
+      {
+        "type": "bool", 
+        "name": ""
+      }
+    ], 
+    "stateMutability": "nonpayable", 
+    "payable": false, 
+    "signature": "0x095ea7b3", 
+    "type": "function"
+  }, 
+  {
+    "inputs": [], 
+    "constant": true, 
+    "name": "totalSupply", 
+    "outputs": [
+      {
+        "type": "uint256", 
+        "name": ""
+      }
+    ], 
+    "stateMutability": "view", 
+    "payable": false, 
+    "signature": "0x18160ddd", 
+    "type": "function"
+  }, 
+  {
+    "inputs": [
+      {
+        "type": "address", 
+        "name": "from"
+      }, 
+      {
+        "type": "address", 
+        "name": "to"
+      }, 
+      {
+        "type": "uint256", 
+        "name": "value"
+      }
+    ], 
+    "constant": false, 
+    "name": "transferFrom", 
+    "outputs": [
+      {
+        "type": "bool", 
+        "name": ""
+      }
+    ], 
+    "stateMutability": "nonpayable", 
+    "payable": false, 
+    "signature": "0x23b872dd", 
+    "type": "function"
+  }, 
+  {
+    "inputs": [], 
+    "constant": true, 
+    "name": "decimals", 
+    "outputs": [
+      {
+        "type": "uint8", 
+        "name": ""
+      }
+    ], 
+    "stateMutability": "view", 
+    "payable": false, 
+    "signature": "0x313ce567", 
+    "type": "function"
+  }, 
+  {
+    "inputs": [
+      {
+        "type": "address", 
+        "name": "spender"
+      }, 
+      {
+        "type": "uint256", 
+        "name": "addedValue"
+      }
+    ], 
+    "constant": false, 
+    "name": "increaseAllowance", 
+    "outputs": [
+      {
+        "type": "bool", 
+        "name": ""
+      }
+    ], 
+    "stateMutability": "nonpayable", 
+    "payable": false, 
+    "signature": "0x39509351", 
+    "type": "function"
+  }, 
+  {
+    "inputs": [
+      {
+        "type": "address", 
+        "name": "to"
+      }, 
+      {
+        "type": "uint256", 
+        "name": "value"
+      }, 
+      {
+        "type": "bytes4", 
+        "name": "sig"
+      }, 
+      {
+        "type": "bytes", 
+        "name": "data"
+      }
+    ], 
+    "constant": false, 
+    "name": "transferAndCall", 
+    "outputs": [
+      {
+        "type": "bool", 
+        "name": ""
+      }
+    ], 
+    "stateMutability": "nonpayable", 
+    "payable": false, 
+    "signature": "0x3c4461be", 
+    "type": "function"
+  }, 
+  {
+    "inputs": [
+      {
+        "type": "address", 
+        "name": "to"
+      }, 
+      {
+        "type": "uint256", 
+        "name": "value"
+      }
+    ], 
+    "constant": false, 
+    "name": "mint", 
+    "outputs": [
+      {
+        "type": "bool", 
+        "name": ""
+      }
+    ], 
+    "stateMutability": "nonpayable", 
+    "payable": false, 
+    "signature": "0x40c10f19", 
+    "type": "function"
+  }, 
+  {
+    "inputs": [], 
+    "constant": true, 
+    "name": "votingPowerChangeNonce", 
+    "outputs": [
+      {
+        "type": "uint256", 
+        "name": ""
+      }
+    ], 
+    "stateMutability": "view", 
+    "payable": false, 
+    "signature": "0x44b6fd81", 
+    "type": "function"
+  }, 
+  {
+    "inputs": [
+      {
+        "type": "address", 
+        "name": ""
+      }
+    ], 
+    "constant": true, 
+    "name": "votingPowerChangeCount", 
+    "outputs": [
+      {
+        "type": "uint256", 
+        "name": ""
+      }
+    ], 
+    "stateMutability": "view", 
+    "payable": false, 
+    "signature": "0x4a7b27e9", 
+    "type": "function"
+  }, 
+  {
+    "inputs": [
+      {
+        "type": "address", 
+        "name": "owner"
+      }
+    ], 
+    "constant": true, 
+    "name": "balanceOf", 
+    "outputs": [
+      {
+        "type": "uint256", 
+        "name": ""
+      }
+    ], 
+    "stateMutability": "view", 
+    "payable": false, 
+    "signature": "0x70a08231", 
+    "type": "function"
+  }, 
+  {
+    "inputs": [], 
+    "constant": true, 
+    "name": "symbol", 
+    "outputs": [
+      {
+        "type": "string", 
+        "name": ""
+      }
+    ], 
+    "stateMutability": "view", 
+    "payable": false, 
+    "signature": "0x95d89b41", 
+    "type": "function"
+  }, 
+  {
+    "inputs": [
+      {
+        "type": "address", 
+        "name": "account"
+      }
+    ], 
+    "constant": false, 
+    "name": "addMinter", 
+    "outputs": [], 
+    "stateMutability": "nonpayable", 
+    "payable": false, 
+    "signature": "0x983b2d56", 
+    "type": "function"
+  }, 
+  {
+    "inputs": [], 
+    "constant": false, 
+    "name": "renounceMinter", 
+    "outputs": [], 
+    "stateMutability": "nonpayable", 
+    "payable": false, 
+    "signature": "0x98650275", 
+    "type": "function"
+  }, 
+  {
+    "inputs": [
+      {
+        "type": "address", 
+        "name": "from"
+      }, 
+      {
+        "type": "uint256", 
+        "name": "value"
+      }
+    ], 
+    "constant": false, 
+    "name": "burn", 
+    "outputs": [
+      {
+        "type": "bool", 
+        "name": ""
+      }
+    ], 
+    "stateMutability": "nonpayable", 
+    "payable": false, 
+    "signature": "0x9dc29fac", 
+    "type": "function"
+  }, 
+  {
+    "inputs": [
+      {
+        "type": "address", 
+        "name": "spender"
+      }, 
+      {
+        "type": "uint256", 
+        "name": "subtractedValue"
+      }
+    ], 
+    "constant": false, 
+    "name": "decreaseAllowance", 
+    "outputs": [
+      {
+        "type": "bool", 
+        "name": ""
+      }
+    ], 
+    "stateMutability": "nonpayable", 
+    "payable": false, 
+    "signature": "0xa457c2d7", 
+    "type": "function"
+  }, 
+  {
+    "inputs": [
+      {
+        "type": "address", 
+        "name": "to"
+      }, 
+      {
+        "type": "uint256", 
+        "name": "value"
+      }
+    ], 
+    "constant": false, 
+    "name": "transfer", 
+    "outputs": [
+      {
+        "type": "bool", 
+        "name": ""
+      }
+    ], 
+    "stateMutability": "nonpayable", 
+    "payable": false, 
+    "signature": "0xa9059cbb", 
+    "type": "function"
+  }, 
+  {
+    "inputs": [
+      {
+        "type": "address", 
+        "name": "account"
+      }
+    ], 
+    "constant": true, 
+    "name": "isMinter", 
+    "outputs": [
+      {
+        "type": "bool", 
+        "name": ""
+      }
+    ], 
+    "stateMutability": "view", 
+    "payable": false, 
+    "signature": "0xaa271e1a", 
+    "type": "function"
+  }, 
+  {
+    "inputs": [
+      {
+        "type": "address", 
+        "name": "owner"
+      }, 
+      {
+        "type": "uint256", 
+        "name": "nonce"
+      }
+    ], 
+    "constant": true, 
+    "name": "historicalVotingPowerAtNonce", 
+    "outputs": [
+      {
+        "type": "uint256", 
+        "name": ""
+      }
+    ], 
+    "stateMutability": "view", 
+    "payable": false, 
+    "signature": "0xcce28096", 
+    "type": "function"
+  }, 
+  {
+    "inputs": [
+      {
+        "type": "address", 
+        "name": "owner"
+      }, 
+      {
+        "type": "uint256", 
+        "name": "index"
+      }
+    ], 
+    "constant": true, 
+    "name": "historicalVotingPowerAtIndex", 
+    "outputs": [
+      {
+        "type": "uint256", 
+        "name": ""
+      }
+    ], 
+    "stateMutability": "view", 
+    "payable": false, 
+    "signature": "0xd6487031", 
+    "type": "function"
+  }, 
+  {
+    "inputs": [
+      {
+        "type": "address", 
+        "name": "owner"
+      }, 
+      {
+        "type": "address", 
+        "name": "spender"
+      }
+    ], 
+    "constant": true, 
+    "name": "allowance", 
+    "outputs": [
+      {
+        "type": "uint256", 
+        "name": ""
+      }
+    ], 
+    "stateMutability": "view", 
+    "payable": false, 
+    "signature": "0xdd62ed3e", 
+    "type": "function"
+  }, 
+  {
+    "inputs": [
+      {
+        "indexed": true, 
+        "type": "address", 
+        "name": "account"
+      }
+    ], 
+    "type": "event", 
+    "name": "MinterAdded", 
+    "anonymous": false, 
+    "signature": "0x6ae172837ea30b801fbfcdd4108aa1d5bf8ff775444fd70256b44e6bf3dfc3f6"
+  }, 
+  {
+    "inputs": [
+      {
+        "indexed": true, 
+        "type": "address", 
+        "name": "account"
+      }
+    ], 
+    "type": "event", 
+    "name": "MinterRemoved", 
+    "anonymous": false, 
+    "signature": "0xe94479a9f7e1952cc78f2d6baab678adc1b772d936c6583def489e524cb66692"
+  }, 
+  {
+    "inputs": [
+      {
+        "indexed": true, 
+        "type": "address", 
+        "name": "from"
+      }, 
+      {
+        "indexed": true, 
+        "type": "address", 
+        "name": "to"
+      }, 
+      {
+        "indexed": false, 
+        "type": "uint256", 
+        "name": "value"
+      }
+    ], 
+    "type": "event", 
+    "name": "Transfer", 
+    "anonymous": false, 
+    "signature": "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef"
+  }, 
+  {
+    "inputs": [
+      {
+        "indexed": true, 
+        "type": "address", 
+        "name": "owner"
+      }, 
+      {
+        "indexed": true, 
+        "type": "address", 
+        "name": "spender"
+      }, 
+      {
+        "indexed": false, 
+        "type": "uint256", 
+        "name": "value"
+      }
+    ], 
+    "type": "event", 
+    "name": "Approval", 
+    "anonymous": false, 
+    "signature": "0x8c5be1e5ebec7d5bd14f71427d1e84f3dd0314c0f7b2291e5b200ac8c7c3b925"
+  }
+]
