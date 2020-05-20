@@ -1,0 +1,83 @@
+[
+  {
+    "inputs": [], 
+    "constant": true, 
+    "name": "status", 
+    "outputs": [
+      {
+        "type": "uint8", 
+        "name": ""
+      }
+    ], 
+    "stateMutability": "view", 
+    "payable": false, 
+    "type": "function"
+  }, 
+  {
+    "inputs": [], 
+    "constant": true, 
+    "name": "tcd", 
+    "outputs": [
+      {
+        "type": "address", 
+        "name": ""
+      }
+    ], 
+    "stateMutability": "view", 
+    "payable": false, 
+    "type": "function"
+  }, 
+  {
+    "inputs": [], 
+    "constant": true, 
+    "name": "result", 
+    "outputs": [
+      {
+        "type": "bytes32", 
+        "name": ""
+      }
+    ], 
+    "stateMutability": "view", 
+    "payable": false, 
+    "type": "function"
+  }, 
+  {
+    "inputs": [], 
+    "constant": true, 
+    "name": "updatedAt", 
+    "outputs": [
+      {
+        "type": "uint256", 
+        "name": ""
+      }
+    ], 
+    "stateMutability": "view", 
+    "payable": false, 
+    "type": "function"
+  }, 
+  {
+    "stateMutability": "nonpayable", 
+    "inputs": [
+      {
+        "type": "address", 
+        "name": "_tcd"
+      }
+    ], 
+    "type": "constructor", 
+    "payable": false
+  }, 
+  {
+    "inputs": [
+      {
+        "type": "bytes", 
+        "name": "input"
+      }
+    ], 
+    "constant": false, 
+    "name": "query", 
+    "outputs": [], 
+    "stateMutability": "payable", 
+    "payable": true, 
+    "type": "function"
+  }
+]
