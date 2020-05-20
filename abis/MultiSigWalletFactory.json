@@ -1,0 +1,222 @@
+[
+  {
+    "inputs": [
+      {
+        "type": "uint256", 
+        "name": ""
+      }
+    ], 
+    "constant": true, 
+    "name": "users", 
+    "outputs": [
+      {
+        "type": "address", 
+        "name": ""
+      }
+    ], 
+    "stateMutability": "view", 
+    "payable": false, 
+    "signature": "0x365b98b2", 
+    "type": "function"
+  }, 
+  {
+    "inputs": [], 
+    "constant": false, 
+    "name": "renounceOwnership", 
+    "outputs": [], 
+    "stateMutability": "nonpayable", 
+    "payable": false, 
+    "signature": "0x715018a6", 
+    "type": "function"
+  }, 
+  {
+    "inputs": [
+      {
+        "type": "address", 
+        "name": ""
+      }
+    ], 
+    "constant": true, 
+    "name": "wallets", 
+    "outputs": [
+      {
+        "type": "address", 
+        "name": ""
+      }
+    ], 
+    "stateMutability": "view", 
+    "payable": false, 
+    "signature": "0x89b08f11", 
+    "type": "function"
+  }, 
+  {
+    "inputs": [], 
+    "constant": true, 
+    "name": "owner", 
+    "outputs": [
+      {
+        "type": "address", 
+        "name": ""
+      }
+    ], 
+    "stateMutability": "view", 
+    "payable": false, 
+    "signature": "0x8da5cb5b", 
+    "type": "function"
+  }, 
+  {
+    "inputs": [], 
+    "constant": true, 
+    "name": "isOwner", 
+    "outputs": [
+      {
+        "type": "bool", 
+        "name": ""
+      }
+    ], 
+    "stateMutability": "view", 
+    "payable": false, 
+    "signature": "0x8f32d59b", 
+    "type": "function"
+  }, 
+  {
+    "inputs": [], 
+    "constant": true, 
+    "name": "authority", 
+    "outputs": [
+      {
+        "type": "address", 
+        "name": ""
+      }
+    ], 
+    "stateMutability": "view", 
+    "payable": false, 
+    "signature": "0xbf7e214f", 
+    "type": "function"
+  }, 
+  {
+    "inputs": [
+      {
+        "type": "address", 
+        "name": "newOwner"
+      }
+    ], 
+    "constant": false, 
+    "name": "transferOwnership", 
+    "outputs": [], 
+    "stateMutability": "nonpayable", 
+    "payable": false, 
+    "signature": "0xf2fde38b", 
+    "type": "function"
+  }, 
+  {
+    "stateMutability": "nonpayable", 
+    "inputs": [], 
+    "signature": "constructor", 
+    "type": "constructor", 
+    "payable": false
+  }, 
+  {
+    "inputs": [
+      {
+        "indexed": true, 
+        "type": "address", 
+        "name": "previousOwner"
+      }, 
+      {
+        "indexed": true, 
+        "type": "address", 
+        "name": "newOwner"
+      }
+    ], 
+    "type": "event", 
+    "name": "OwnershipTransferred", 
+    "anonymous": false, 
+    "signature": "0x8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0"
+  }, 
+  {
+    "inputs": [
+      {
+        "type": "address", 
+        "name": "_authority"
+      }
+    ], 
+    "constant": false, 
+    "name": "setAuthority", 
+    "outputs": [], 
+    "stateMutability": "nonpayable", 
+    "payable": false, 
+    "signature": "0x7a9e5e4b", 
+    "type": "function"
+  }, 
+  {
+    "inputs": [], 
+    "constant": true, 
+    "name": "numberOfUsers", 
+    "outputs": [
+      {
+        "type": "uint256", 
+        "name": ""
+      }
+    ], 
+    "stateMutability": "view", 
+    "payable": false, 
+    "signature": "0x75ce46a7", 
+    "type": "function"
+  }, 
+  {
+    "inputs": [
+      {
+        "type": "address", 
+        "name": "_addr"
+      }
+    ], 
+    "constant": true, 
+    "name": "isUser", 
+    "outputs": [
+      {
+        "type": "bool", 
+        "name": ""
+      }
+    ], 
+    "stateMutability": "view", 
+    "payable": false, 
+    "signature": "0x4209fff1", 
+    "type": "function"
+  }, 
+  {
+    "inputs": [
+      {
+        "type": "address", 
+        "name": "_user"
+      }
+    ], 
+    "constant": false, 
+    "name": "removeWalletByUser", 
+    "outputs": [], 
+    "stateMutability": "nonpayable", 
+    "payable": false, 
+    "signature": "0x6779b7aa", 
+    "type": "function"
+  }, 
+  {
+    "inputs": [
+      {
+        "type": "address", 
+        "name": "_user"
+      }
+    ], 
+    "constant": false, 
+    "name": "createNewWallet", 
+    "outputs": [
+      {
+        "type": "address", 
+        "name": ""
+      }
+    ], 
+    "stateMutability": "nonpayable", 
+    "payable": false, 
+    "signature": "0x4e24a51d", 
+    "type": "function"
+  }
+]
