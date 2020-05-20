@@ -1,0 +1,32 @@
+[
+  {
+    "stateMutability": "nonpayable", 
+    "inputs": [
+      {
+        "type": "uint256[]", 
+        "name": "expressions"
+      }
+    ], 
+    "type": "constructor", 
+    "payable": false
+  }, 
+  {
+    "inputs": [
+      {
+        "type": "uint256", 
+        "name": "supply"
+      }
+    ], 
+    "constant": true, 
+    "name": "getCollateralAt", 
+    "outputs": [
+      {
+        "type": "uint256", 
+        "name": ""
+      }
+    ], 
+    "stateMutability": "view", 
+    "payable": false, 
+    "type": "function"
+  }
+]
