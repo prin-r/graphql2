@@ -1,0 +1,74 @@
+[
+  {
+    "inputs": [
+      {
+        "type": "uint256", 
+        "name": "x"
+      }
+    ], 
+    "constant": true, 
+    "name": "evaluate", 
+    "outputs": [
+      {
+        "type": "uint256", 
+        "name": ""
+      }
+    ], 
+    "stateMutability": "view", 
+    "payable": false, 
+    "signature": "0x37143233", 
+    "type": "function"
+  }, 
+  {
+    "inputs": [
+      {
+        "type": "uint256", 
+        "name": ""
+      }
+    ], 
+    "constant": true, 
+    "name": "equation", 
+    "outputs": [
+      {
+        "type": "uint8", 
+        "name": "opcode"
+      }, 
+      {
+        "type": "uint8", 
+        "name": "child0"
+      }, 
+      {
+        "type": "uint8", 
+        "name": "child1"
+      }, 
+      {
+        "type": "uint8", 
+        "name": "child2"
+      }, 
+      {
+        "type": "uint8", 
+        "name": "child3"
+      }, 
+      {
+        "type": "uint256", 
+        "name": "value"
+      }
+    ], 
+    "stateMutability": "view", 
+    "payable": false, 
+    "signature": "0xa957e985", 
+    "type": "function"
+  }, 
+  {
+    "stateMutability": "nonpayable", 
+    "inputs": [
+      {
+        "type": "uint256[]", 
+        "name": "expressionTree"
+      }
+    ], 
+    "signature": "constructor", 
+    "type": "constructor", 
+    "payable": false
+  }
+]
