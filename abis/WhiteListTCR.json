@@ -1,0 +1,676 @@
+[
+  {
+    "inputs": [
+      {
+        "type": "bytes32", 
+        "name": "data"
+      }, 
+      {
+        "type": "uint256", 
+        "name": "amount"
+      }
+    ], 
+    "constant": false, 
+    "name": "withdraw", 
+    "outputs": [], 
+    "stateMutability": "nonpayable", 
+    "payable": false, 
+    "type": "function"
+  }, 
+  {
+    "inputs": [
+      {
+        "type": "bytes32", 
+        "name": "data"
+      }
+    ], 
+    "constant": false, 
+    "name": "exit", 
+    "outputs": [], 
+    "stateMutability": "nonpayable", 
+    "payable": false, 
+    "type": "function"
+  }, 
+  {
+    "inputs": [
+      {
+        "type": "address", 
+        "name": "voter"
+      }, 
+      {
+        "type": "uint256", 
+        "name": "challengeId"
+      }
+    ], 
+    "constant": false, 
+    "name": "claimReward", 
+    "outputs": [], 
+    "stateMutability": "nonpayable", 
+    "payable": false, 
+    "type": "function"
+  }, 
+  {
+    "inputs": [
+      {
+        "type": "bytes32", 
+        "name": ""
+      }
+    ], 
+    "constant": true, 
+    "name": "entries", 
+    "outputs": [
+      {
+        "type": "address", 
+        "name": "proposer"
+      }, 
+      {
+        "type": "uint256", 
+        "name": "deposit"
+      }, 
+      {
+        "type": "uint256", 
+        "name": "listedAt"
+      }, 
+      {
+        "type": "uint256", 
+        "name": "challengeId"
+      }
+    ], 
+    "stateMutability": "view", 
+    "payable": false, 
+    "type": "function"
+  }, 
+  {
+    "inputs": [
+      {
+        "type": "address", 
+        "name": "depositor"
+      }, 
+      {
+        "type": "uint256", 
+        "name": "amount"
+      }, 
+      {
+        "type": "bytes32", 
+        "name": "data"
+      }
+    ], 
+    "constant": false, 
+    "name": "deposit", 
+    "outputs": [], 
+    "stateMutability": "nonpayable", 
+    "payable": false, 
+    "type": "function"
+  }, 
+  {
+    "inputs": [
+      {
+        "type": "address", 
+        "name": "proposer"
+      }, 
+      {
+        "type": "uint256", 
+        "name": "stake"
+      }, 
+      {
+        "type": "bytes32", 
+        "name": "data"
+      }
+    ], 
+    "constant": false, 
+    "name": "applyEntry", 
+    "outputs": [], 
+    "stateMutability": "nonpayable", 
+    "payable": false, 
+    "type": "function"
+  }, 
+  {
+    "inputs": [
+      {
+        "type": "address", 
+        "name": "challenger"
+      }, 
+      {
+        "type": "uint256", 
+        "name": "challengeDeposit"
+      }, 
+      {
+        "type": "bytes32", 
+        "name": "data"
+      }, 
+      {
+        "type": "bytes32", 
+        "name": "reasonData"
+      }
+    ], 
+    "constant": false, 
+    "name": "initiateChallenge", 
+    "outputs": [], 
+    "stateMutability": "nonpayable", 
+    "payable": false, 
+    "type": "function"
+  }, 
+  {
+    "inputs": [], 
+    "constant": true, 
+    "name": "prefix", 
+    "outputs": [
+      {
+        "type": "bytes8", 
+        "name": ""
+      }
+    ], 
+    "stateMutability": "view", 
+    "payable": false, 
+    "type": "function"
+  }, 
+  {
+    "inputs": [
+      {
+        "type": "uint256", 
+        "name": "challengeId"
+      }
+    ], 
+    "constant": false, 
+    "name": "resolveChallenge", 
+    "outputs": [], 
+    "stateMutability": "nonpayable", 
+    "payable": false, 
+    "type": "function"
+  }, 
+  {
+    "inputs": [
+      {
+        "type": "uint256", 
+        "name": ""
+      }
+    ], 
+    "constant": true, 
+    "name": "challenges", 
+    "outputs": [
+      {
+        "type": "bytes32", 
+        "name": "entryData"
+      }, 
+      {
+        "type": "bytes32", 
+        "name": "reasonData"
+      }, 
+      {
+        "type": "address", 
+        "name": "challenger"
+      }, 
+      {
+        "type": "uint256", 
+        "name": "rewardPool"
+      }, 
+      {
+        "type": "uint256", 
+        "name": "remainingRewardVotes"
+      }, 
+      {
+        "type": "uint256", 
+        "name": "commitEndTime"
+      }, 
+      {
+        "type": "uint256", 
+        "name": "revealEndTime"
+      }, 
+      {
+        "type": "uint256", 
+        "name": "snapshotNonce"
+      }, 
+      {
+        "type": "uint256", 
+        "name": "voteRemoveRequiredPct"
+      }, 
+      {
+        "type": "uint256", 
+        "name": "voteMinParticipation"
+      }, 
+      {
+        "type": "uint256", 
+        "name": "keepCount"
+      }, 
+      {
+        "type": "uint256", 
+        "name": "removeCount"
+      }, 
+      {
+        "type": "uint256", 
+        "name": "totalCommitCount"
+      }, 
+      {
+        "type": "uint8", 
+        "name": "state"
+      }
+    ], 
+    "stateMutability": "view", 
+    "payable": false, 
+    "type": "function"
+  }, 
+  {
+    "inputs": [
+      {
+        "type": "uint256", 
+        "name": "challengeId"
+      }, 
+      {
+        "type": "bytes32", 
+        "name": "commitValue"
+      }
+    ], 
+    "constant": false, 
+    "name": "commitVote", 
+    "outputs": [], 
+    "stateMutability": "nonpayable", 
+    "payable": false, 
+    "type": "function"
+  }, 
+  {
+    "inputs": [
+      {
+        "type": "bytes32", 
+        "name": "data"
+      }
+    ], 
+    "constant": true, 
+    "name": "isEntryActive", 
+    "outputs": [
+      {
+        "type": "bool", 
+        "name": ""
+      }
+    ], 
+    "stateMutability": "view", 
+    "payable": false, 
+    "type": "function"
+  }, 
+  {
+    "inputs": [
+      {
+        "type": "uint256", 
+        "name": "challengeId"
+      }, 
+      {
+        "type": "address", 
+        "name": "voter"
+      }
+    ], 
+    "constant": true, 
+    "name": "getVoteStatus", 
+    "outputs": [
+      {
+        "type": "uint8", 
+        "name": ""
+      }
+    ], 
+    "stateMutability": "view", 
+    "payable": false, 
+    "type": "function"
+  }, 
+  {
+    "inputs": [], 
+    "constant": true, 
+    "name": "params", 
+    "outputs": [
+      {
+        "type": "address", 
+        "name": ""
+      }
+    ], 
+    "stateMutability": "view", 
+    "payable": false, 
+    "type": "function"
+  }, 
+  {
+    "inputs": [
+      {
+        "type": "bytes32", 
+        "name": "entryData"
+      }
+    ], 
+    "constant": true, 
+    "name": "currentMinDeposit", 
+    "outputs": [
+      {
+        "type": "uint256", 
+        "name": ""
+      }
+    ], 
+    "stateMutability": "view", 
+    "payable": false, 
+    "type": "function"
+  }, 
+  {
+    "inputs": [
+      {
+        "type": "address", 
+        "name": "voter"
+      }, 
+      {
+        "type": "uint256", 
+        "name": "challengeId"
+      }, 
+      {
+        "type": "bool", 
+        "name": "voteKeep"
+      }, 
+      {
+        "type": "uint256", 
+        "name": "salt"
+      }
+    ], 
+    "constant": false, 
+    "name": "revealVote", 
+    "outputs": [], 
+    "stateMutability": "nonpayable", 
+    "payable": false, 
+    "type": "function"
+  }, 
+  {
+    "inputs": [], 
+    "constant": true, 
+    "name": "token", 
+    "outputs": [
+      {
+        "type": "address", 
+        "name": ""
+      }
+    ], 
+    "stateMutability": "view", 
+    "payable": false, 
+    "type": "function"
+  }, 
+  {
+    "stateMutability": "nonpayable", 
+    "inputs": [
+      {
+        "type": "bytes8", 
+        "name": "_prefix"
+      }, 
+      {
+        "type": "address", 
+        "name": "_params"
+      }
+    ], 
+    "type": "constructor", 
+    "payable": false
+  }, 
+  {
+    "inputs": [
+      {
+        "indexed": false, 
+        "type": "bytes32", 
+        "name": "data"
+      }, 
+      {
+        "indexed": true, 
+        "type": "address", 
+        "name": "proposer"
+      }, 
+      {
+        "indexed": false, 
+        "type": "uint256", 
+        "name": "listAt"
+      }, 
+      {
+        "indexed": false, 
+        "type": "uint256", 
+        "name": "deposit"
+      }
+    ], 
+    "type": "event", 
+    "name": "ApplicationSubmitted", 
+    "anonymous": false
+  }, 
+  {
+    "inputs": [
+      {
+        "indexed": true, 
+        "type": "bytes32", 
+        "name": "data"
+      }, 
+      {
+        "indexed": false, 
+        "type": "uint256", 
+        "name": "value"
+      }
+    ], 
+    "type": "event", 
+    "name": "EntryDeposited", 
+    "anonymous": false
+  }, 
+  {
+    "inputs": [
+      {
+        "indexed": true, 
+        "type": "bytes32", 
+        "name": "data"
+      }, 
+      {
+        "indexed": false, 
+        "type": "uint256", 
+        "name": "value"
+      }
+    ], 
+    "type": "event", 
+    "name": "EntryWithdrawn", 
+    "anonymous": false
+  }, 
+  {
+    "inputs": [
+      {
+        "indexed": true, 
+        "type": "bytes32", 
+        "name": "data"
+      }
+    ], 
+    "type": "event", 
+    "name": "EntryExited", 
+    "anonymous": false
+  }, 
+  {
+    "inputs": [
+      {
+        "indexed": true, 
+        "type": "bytes32", 
+        "name": "data"
+      }, 
+      {
+        "indexed": true, 
+        "type": "uint256", 
+        "name": "challengeId"
+      }, 
+      {
+        "indexed": true, 
+        "type": "address", 
+        "name": "challenger"
+      }, 
+      {
+        "indexed": false, 
+        "type": "uint256", 
+        "name": "stake"
+      }, 
+      {
+        "indexed": false, 
+        "type": "bytes32", 
+        "name": "reasonData"
+      }, 
+      {
+        "indexed": false, 
+        "type": "uint256", 
+        "name": "proposerVote"
+      }, 
+      {
+        "indexed": false, 
+        "type": "uint256", 
+        "name": "challengerVote"
+      }
+    ], 
+    "type": "event", 
+    "name": "ChallengeInitiated", 
+    "anonymous": false
+  }, 
+  {
+    "inputs": [
+      {
+        "indexed": true, 
+        "type": "uint256", 
+        "name": "challengeId"
+      }, 
+      {
+        "indexed": true, 
+        "type": "address", 
+        "name": "voter"
+      }, 
+      {
+        "indexed": false, 
+        "type": "bytes32", 
+        "name": "commitValue"
+      }, 
+      {
+        "indexed": false, 
+        "type": "uint256", 
+        "name": "weight"
+      }
+    ], 
+    "type": "event", 
+    "name": "ChallengeVoteCommitted", 
+    "anonymous": false
+  }, 
+  {
+    "inputs": [
+      {
+        "indexed": true, 
+        "type": "uint256", 
+        "name": "challengeId"
+      }, 
+      {
+        "indexed": true, 
+        "type": "address", 
+        "name": "voter"
+      }, 
+      {
+        "indexed": false, 
+        "type": "bool", 
+        "name": "voteKeep"
+      }
+    ], 
+    "type": "event", 
+    "name": "ChallengeVoteRevealed", 
+    "anonymous": false
+  }, 
+  {
+    "inputs": [
+      {
+        "indexed": true, 
+        "type": "bytes32", 
+        "name": "data"
+      }, 
+      {
+        "indexed": true, 
+        "type": "uint256", 
+        "name": "challengeId"
+      }, 
+      {
+        "indexed": false, 
+        "type": "uint256", 
+        "name": "voterRewardPool"
+      }, 
+      {
+        "indexed": false, 
+        "type": "uint256", 
+        "name": "challengerReward"
+      }
+    ], 
+    "type": "event", 
+    "name": "ChallengeSuccess", 
+    "anonymous": false
+  }, 
+  {
+    "inputs": [
+      {
+        "indexed": true, 
+        "type": "bytes32", 
+        "name": "data"
+      }, 
+      {
+        "indexed": true, 
+        "type": "uint256", 
+        "name": "challengeId"
+      }, 
+      {
+        "indexed": false, 
+        "type": "uint256", 
+        "name": "voterRewardPool"
+      }, 
+      {
+        "indexed": false, 
+        "type": "uint256", 
+        "name": "proposerReward"
+      }
+    ], 
+    "type": "event", 
+    "name": "ChallengeFailed", 
+    "anonymous": false
+  }, 
+  {
+    "inputs": [
+      {
+        "indexed": true, 
+        "type": "bytes32", 
+        "name": "data"
+      }, 
+      {
+        "indexed": true, 
+        "type": "uint256", 
+        "name": "challengeId"
+      }
+    ], 
+    "type": "event", 
+    "name": "ChallengeInconclusive", 
+    "anonymous": false
+  }, 
+  {
+    "inputs": [
+      {
+        "indexed": true, 
+        "type": "uint256", 
+        "name": "challengeId"
+      }, 
+      {
+        "indexed": true, 
+        "type": "address", 
+        "name": "voter"
+      }, 
+      {
+        "indexed": false, 
+        "type": "uint256", 
+        "name": "reward"
+      }
+    ], 
+    "type": "event", 
+    "name": "ChallengeRewardClaimed", 
+    "anonymous": false
+  }, 
+  {
+    "inputs": [
+      {
+        "type": "address", 
+        "name": "reader"
+      }
+    ], 
+    "constant": true, 
+    "name": "verify", 
+    "outputs": [
+      {
+        "type": "bool", 
+        "name": ""
+      }
+    ], 
+    "stateMutability": "view", 
+    "payable": false, 
+    "type": "function"
+  }
+]
