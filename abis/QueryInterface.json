@@ -1,0 +1,90 @@
+[
+  {
+    "inputs": [], 
+    "constant": true, 
+    "name": "registry", 
+    "outputs": [
+      {
+        "type": "address", 
+        "name": ""
+      }
+    ], 
+    "stateMutability": "view", 
+    "payable": false, 
+    "type": "function"
+  }, 
+  {
+    "stateMutability": "nonpayable", 
+    "inputs": [
+      {
+        "type": "address", 
+        "name": "_registry"
+      }
+    ], 
+    "type": "constructor", 
+    "payable": false
+  }, 
+  {
+    "inputs": [
+      {
+        "indexed": true, 
+        "type": "address", 
+        "name": "caller"
+      }, 
+      {
+        "indexed": false, 
+        "type": "bytes", 
+        "name": "input"
+      }, 
+      {
+        "indexed": false, 
+        "type": "uint8", 
+        "name": "status"
+      }
+    ], 
+    "type": "event", 
+    "name": "Query", 
+    "anonymous": false
+  }, 
+  {
+    "inputs": [
+      {
+        "type": "bytes", 
+        "name": "input"
+      }
+    ], 
+    "constant": false, 
+    "name": "query", 
+    "outputs": [
+      {
+        "type": "bytes32", 
+        "name": "output"
+      }, 
+      {
+        "type": "uint256", 
+        "name": "updatedAt"
+      }, 
+      {
+        "type": "uint8", 
+        "name": "status"
+      }
+    ], 
+    "stateMutability": "payable", 
+    "payable": true, 
+    "type": "function"
+  }, 
+  {
+    "inputs": [], 
+    "constant": true, 
+    "name": "queryPrice", 
+    "outputs": [
+      {
+        "type": "uint256", 
+        "name": ""
+      }
+    ], 
+    "stateMutability": "view", 
+    "payable": false, 
+    "type": "function"
+  }
+]
