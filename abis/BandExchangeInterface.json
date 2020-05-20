@@ -1,0 +1,16 @@
+[
+  {
+    "inputs": [], 
+    "constant": false, 
+    "name": "convertFromEthToBand", 
+    "outputs": [
+      {
+        "type": "uint256", 
+        "name": ""
+      }
+    ], 
+    "stateMutability": "payable", 
+    "payable": true, 
+    "type": "function"
+  }
+]
